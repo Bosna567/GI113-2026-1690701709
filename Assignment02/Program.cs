@@ -18,7 +18,6 @@
             Console.WriteLine("||  The Celestial Forge of Eternal  ||");
             Console.WriteLine("||                                  ||");
             Console.WriteLine("+++++++++++++++++++++++++++++++++++++");
-
             Console.WriteLine($"{Name} ore Smelting 0.75 / Salvage 0.85 ");
             Console.WriteLine("Key 'S' for Smelt (Ore -> Ingot)");
             Console.WriteLine("Key 'B' for Breakdown (Ingot -> Ore)");
