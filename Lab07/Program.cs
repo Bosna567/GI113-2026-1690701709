@@ -73,7 +73,7 @@
             //part B
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             const int MonsterHp2 = 600;
-            Console.Write("| Monster Defense |");
+            Console.Write(" Monster Defense ");
             int.TryParse(Console.ReadLine(), out int monsterDefense2);
             Console.WriteLine($"A Orc King appears! HP {MonsterHp2}, DEF {monsterDefense2}");
             Console.WriteLine("-------------------");
