@@ -93,7 +93,7 @@ namespace Lab07
             Console.WriteLine("2) ====Demon Bane====");
             Console.WriteLine("3) ====Signum Crucis====");
             Console.WriteLine("4) ====Holy Light====");
-            Console.WriteLine("5) ====Root====");
+            Console.WriteLine("5) ====Divine Protection====");
             Console.WriteLine("6) ====Escape====");
             Console.WriteLine("===================");
             Console.Write("Choose (1-6): ");
@@ -114,7 +114,7 @@ namespace Lab07
                     Console.WriteLine("You casts Holy Light!");
                     break;
                 case 5:
-                    Console.WriteLine("You uses Root!");
+                    Console.WriteLine("You use Divine Protection");
                     break;
                 case 6:
                     Console.WriteLine("You tries to escape!");
@@ -129,16 +129,16 @@ namespace Lab07
                 2 => 100,
                 3 => 250,
                 4 => 300,
-                5 => 0,
+                5 => 350,
                 _ => 0
             };
             int damage2 = Math.Max(0, power2 - monsterDefense2);
             Console.WriteLine($"Damage: {damage2}");
             string rating2 = damage2 switch
             {
-                >= 300 => "Critical hit!",
+                >= 350 => "Critical hit!",
                 >= 100 => "Solid hit.",
-                > 0 => "Scratch.",
+                >=0 => "Scratch.",
                 _ => "No damage."
             };
             Console.Write("Do you want to escape? (yes/no): ");
