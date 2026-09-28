@@ -1,4 +1,14 @@
-﻿namespace Lab07
+﻿/*
+Student ID :1690701709
+Name       :Aditap Suksamran
+Section    :129B
+No.        :29
+Course     :GI113 Computer Programming (GI)
+*/
+
+
+
+namespace Lab07
 {
     internal class Program
     {
@@ -88,6 +98,7 @@
             Console.WriteLine("===================");
             Console.Write("Choose (1-6): ");
             int.TryParse(Console.ReadLine(), out int command2);
+            Console.WriteLine();
             switch (command2)
             {
                 case 1:
