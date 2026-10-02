@@ -15,7 +15,7 @@ namespace Assignment02
             const string Name = "DIMOND";
             const double smeltRate = 0.7500;
             const double SalvageRate = 0.8500;
-            const double MaxBatch = 500.00;
+            const double MaxBatch = 999.00;
             var inGot = 0.0;
             var ore = 0.0;
             Console.ForegroundColor = ConsoleColor.Cyan;
@@ -37,13 +37,13 @@ namespace Assignment02
             }
             else if (choice == 'S' || choice == 's')
             {
-                Console.Write("Chould pick number (1-500): ");
+                Console.Write("Chould pick number (1-999): ");
                 bool isInput = double.TryParse(Console.ReadLine(), out ore);
                 if (!isInput)
                 {
-                    Console.WriteLine("Chould pick number (1-500): ");
+                    Console.WriteLine("Chould pick number (1-999): ");
                 }
-                else if (ore <= 500 && ore > 0)
+                else if (ore <= 999 && ore > 0)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
                     inGot = ore * smeltRate;
@@ -51,18 +51,18 @@ namespace Assignment02
                 }
                 else
                 {
-                    Console.WriteLine("Chould pick number (1-500).");
+                    Console.WriteLine("Chould pick number (1-999).");
                 }
             }
             else if (choice == 'B' || choice == 'b')
             {
-                Console.Write("How much you have Dimond (1-500): ");
+                Console.Write("How much you have Dimond (1-999): ");
                 bool isInput = double.TryParse(Console.ReadLine(), out ore);
                 if (!isInput)
                 {
-                    Console.WriteLine("Chould pick number (1-500): ");
+                    Console.WriteLine("Chould pick number (1-999): ");
                 }
-                else if (ore <= 500 && ore > 0)
+                else if (ore <= 999 && ore > 0)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
                     inGot = ore / SalvageRate;
@@ -70,7 +70,7 @@ namespace Assignment02
                 }
                 else
                 {
-                    Console.WriteLine("Chould pick number (1-500).");
+                    Console.WriteLine("Chould pick number (1-999).");
                 }
             }
             else
