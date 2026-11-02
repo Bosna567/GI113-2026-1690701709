@@ -10,7 +10,7 @@ using UnityEngine;
 
 public class Arrays : MonoBehaviour
 {
-    //part A
+    
     [SerializeField] int[] numbers = { 12, 7, 30, 4, 19, 25, 9, 18 };
     void Start()
     {
@@ -49,8 +49,6 @@ public class Arrays : MonoBehaviour
         foreach (int n in numbers)
         {
             Debug.Log("Sorted: " + n);
-            //part B
-
         }
 
     }
